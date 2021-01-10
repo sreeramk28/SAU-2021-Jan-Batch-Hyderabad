@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+	<title>Sreeram K</title>
+</head>
+<style type="text/css">
+	html {
+		scroll-behavior: smooth;
+	}
+	body {
+		font-family: 'Fira Sans', sans-serif;
+		color: #ffffff;
+	}
+	.arrow-bounce {
+  		-moz-animation: bounce 2s infinite;
+  		-webkit-animation: bounce 2s infinite;
+  		animation: bounce 2s infinite;
+	}
+	@keyframes bounce {
+	  60% {
+	    transform: translateY(-15px);
+	  }
+	  0%, 100% {
+	    transform: translateY(0);  
+	  }
+	}
+	.cover {
+		position: relative;
+		height: 100vh;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background: #000428;  /* fallback for old browsers */
+		background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	a { 
+		color: white; 
+		text-decoration: none; 
+	}
+	p {
+		letter-spacing: 4px;
+		margin-bottom: 1.5rem;
+	}
+	.hyperlink:link {
+		color: white;
+		text-decoration: none;
+	}
+	.hyperlink:visited {
+		color: white;
+		text-decoration: none;
+	}
+	.hyperlink:hover {
+		color: white;
+		text-decoration: underline;
+	}
+	.hyperlink:active {	
+		color: white;
+		text-decoration: underline;
+	}
+	.arrow {
+	  border: solid white;
+	  border-width: 0 2px 2px 0;
+	  display: inline-block;
+	  padding: 20px;
+	}
+	.up {
+	  transform: rotate(-135deg);
+	  -webkit-transform: rotate(-135deg);
+	}
+
+	.down {
+	  transform: rotate(45deg);
+	  -webkit-transform: rotate(45deg);
+	}
+</style>
+<body>
+	<section class="cover" id="starter">
+		<img height="127" width="107" src="./sreeram-1.jpg" class="img-rounded" style="margin-bottom: 15px;" alt="My Photo">
+		<p class="text-center" style="font-size: 5rem;"> SREERAM K </p>
+		<p class="text-center" style="font-size: 3.5rem">CS Student, SSN College of Engineering </p>
+		<div class="arrow-bounce" style="position: absolute; bottom: 7rem;">
+			<a href="#exp"> <i class="arrow down"></i> </a>
+		</div>
+	</section>
+	<section class="cover" id="exp">
+		<p class="text-center" style="font-size: 4rem;"> EXPERIENCE </p>
+		<div style="font-size: 2.5rem">
+			<ul style="list-style-type: none;">
+				<li><p>Software Engineer Intern, Accolite</p></li>
+				<li><p>Full Stack Web Developer Intern, Youthink India</p></li>
+				<li><p>Problem Setter Intern, GUVI</p></li>
+			</ul>
+		</div>
+		<div class="arrow-bounce" style="position: absolute; bottom: 7rem;">
+			<a href="#interests"> <i class="arrow down"></i> </a>
+		</div>
+	</section>
+	<section class="cover" id="interests">
+		<p class="text-center" style="font-size: 4rem;"> INTERESTS & HOBBIES </p>
+		<div style="font-size: 2.5rem">
+			<ul style="list-style-type: none;">
+				<li><p>Problem Solving</p></li>
+				<li><p>Competitive Programming</p></li>
+				<li><p>Chess</p></li>
+				<li><p>Cricket</p></li>
+				<li><p>Web Development</p></li>
+			</ul>
+		</div>
+		<div class="arrow-bounce" style="position: absolute; bottom: 7rem;">
+			<a href="#achievements"> <i class="arrow down"></i> </a>
+		</div>
+	</section>
+	<section class="cover" id="achievements">
+		<p class="text-center" style="font-size: 4rem;"> ACHIEVEMENTS </p>
+		<div style="font-size: 2.5rem">
+			<ul style="list-style-type: none;">
+				<li><p>India Rank 205 in Google Hashcode 2020</p></li>
+				<li><p>India Rank 372 in ACM ICPC 2019 Online Round</p></li>
+				<li><p>International FIDE Chess Rating 1158</p></li>
+			</ul>
+		</div>
+		<div class="arrow-bounce" style="position: absolute; bottom: 7rem;">
+			<a href="#connect"> <i class="arrow down"></i> </a>
+		</div>
+	</section>
+	<section class="cover" id="connect">
+		<p class="text-center" style="font-size: 4rem;"> CONNECT </p>
+		<div style="font-size: 2.5rem; display: flex; justify-content: space-around; width: 300px;">
+			<a href="https://github.com/sreeramk28" class="hyperlink" target="_blank">
+				Github
+			</a>
+			<a href="https://www.linkedin.com/in/sreeram-k/" class="hyperlink" target="_blank">
+				LinkedIn
+			</a>
+		</div>
+		<div class="arrow-bounce" style="position: absolute; bottom: 7rem;">
+			<a href="#"> <i class="arrow up"></i> </a>
+		</div>
+	</section>
+</body>
+</html>

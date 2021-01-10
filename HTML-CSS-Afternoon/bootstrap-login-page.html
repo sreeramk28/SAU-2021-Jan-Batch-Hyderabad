@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<!-- Latest compiled and minified CSS -->
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+	.cover {
+		font-family: 'Fira Sans', sans-serif;
+		font-size: 1.6rem;
+		width: 100vw;
+		height: 100vh;
+		border: 1rem solid #d3d3d3;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
+<body>
+	<div class="cover">
+		<form onsubmit="return save()">
+			<div class="form-group">
+				<label for="username">Username</label>
+				<input type="text" class="form-control" name="username" id="username">
+			</div>
+			<div class="form-group">
+				<label for="passw">Password</label>
+				<input type="password" class="form-control" name="passw" id="passw">
+			</div>
+			<button type="submit" class="btn btn-success">Submit</button>
+		</form>
+		<br>
+		<button class="btn btn-primary" onclick="fetchi()">Fill last used username</button>
+		
+	</div>
+</body>
+<script type="text/javascript">
+	
+	function save() {
+		var username = document.getElementById("username").value; 
+		localStorage.setItem("uname", username);
+		var password = document.getElementById("passw").value;
+		localStorage.setItem("passw", password);
+		alert("Thank you");
+	}
+	function fetchi() {
+		var prev_username = localStorage.getItem("uname");
+		if (prev_username) {
+			document.getElementById("username").value = prev_username;
+		}
+		else {
+			alert("No username found!");
+		}
+	}
+</script>
+</html>

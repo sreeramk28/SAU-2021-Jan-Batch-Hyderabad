@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Progress Bar Animation</title>
+	<style>
+		.cover {
+			
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;	
+		}
+		.bar-outline {
+			position: relative;
+			height: 30px;
+			width: 200px;
+			border-radius: 2px;
+			border: 1px solid #000000;
+		}
+		.animator {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 30px;
+			width: 0px;
+			background-color: #FFC31B;
+			animation-name: mu;
+			animation-duration: 4s;
+			animation-iteration-count: 10;
+		}
+
+		@keyframes mu {
+			0% {
+				background-color: #FFC31B;
+				width: 0px;
+			}
+			16% {
+				background-color: #FFC31B;
+				width: 32px;
+			}
+			32% {
+				background-color: #FFC31B;
+				width: 64px;
+			}
+			48% {
+				background-color: #DCE775;
+				width: 96px;
+			}
+			64% {
+				background-color: #DCE775;
+				width: 128px;
+			}
+			80% {
+				background-color: #8BC34A;
+				width: 160px;
+			}
+			96% {
+				background-color: #388E3C
+				width: 192px;
+			}
+			100% {
+				background-color: #388E3C;
+				width: 200px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="cover">
+		<p> Progress </p>
+		<div class="bar-outline">
+			<div class="animator">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
